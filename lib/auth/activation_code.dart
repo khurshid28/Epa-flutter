@@ -370,9 +370,12 @@ class _WaitingState extends State<Waiting> with TickerProviderStateMixin{
            if (_animationController!.value ==1) {
              return  ActivationCode(widget._cardNumber);
            } else {
-             return Center(
-               child: CircularProgressIndicator(
-                 color: Colors.red,
+             return Scaffold(
+               backgroundColor: Color.fromRGBO(242, 242, 242, 1), ,
+               body: Center(
+                 child: CircularProgressIndicator(
+                   color: Colors.red,
+                 ),
                ),
              );
            }
