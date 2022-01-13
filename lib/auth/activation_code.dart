@@ -371,7 +371,7 @@ class _WaitingState extends State<Waiting> with TickerProviderStateMixin{
              return  ActivationCode(widget._cardNumber);
            } else {
              return Scaffold(
-               backgroundColor: Color.fromRGBO(242, 242, 242, 1), ,
+               backgroundColor: Color.fromRGBO(242, 242, 242, 1),
                body: Center(
                  child: CircularProgressIndicator(
                    color: Colors.red,
